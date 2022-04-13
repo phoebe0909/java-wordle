@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class Main {
 
-    //defining colors.
+    //defining background colors.
     public static final String ANSI_RESET = "\u001B[0m";
     public static final String ANSI_YELLOW = "\u001B[43m";
     public static final String ANSI_GREEN = "\u001B[42m";
@@ -48,7 +48,7 @@ public class Main {
             char[] guessArray = guess.toCharArray();
             char[] decoyArray = guess.toCharArray();
 
-            // check if the number of characters is 5. This is where I would like to add a dictionary to check if words are valid.
+            // check if the number of characters is 5. This is where I would like to add a dictionary to also check if words are valid.
             if (guessArray.length != 5){
                 System.out.println("Invalid. Enter your 5-letter guess: ");
                 guess = scanner.nextLine();
@@ -73,10 +73,7 @@ public class Main {
                     }
                 }
 
-                //Find misplaced/yellow letters. I knew this would be the biggest challenge of this project and it was!
-                //My solution involved a nested for loop. One variable is cycling through the answer array while the other
-                //is cycling through the decoy array. It took me a while to realize that the key was not only removing
-                //a "found" letter from the decoy array, but also removing it from the answer array.
+                //Find misplaced/yellow letters. 
                 for (int x = 0; x < 5; x++) {
                     for (int y = 4; y > -1; y--) {
                         if (decoyArray[y] == answerArray[x]) {
@@ -86,7 +83,7 @@ public class Main {
                     }
                 }
 
-                //Print letters with correct color backgrounds. I found that I was able to reuse the decoy array for this as well.
+                //Print letters with correct color backgrounds. 
                 for (int x = 0; x < 5; x++) {
                     if (decoyArray[x] == '#') {
                         System.out.print(ANSI_GREEN + " " + guessArray[x] + " " + ANSI_RESET + " ");
