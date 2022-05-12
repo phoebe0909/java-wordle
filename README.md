@@ -14,11 +14,7 @@ When you make a guess, the letters that are in the correct spot light up green. 
 
 
 
-My first step was to go through the user’s correct/green letters first and replace them with symbols. I created a copy of the user’s guess for this purpose and called it the decoyArray. Then I made a nested loop to search through the answer array and compare it to the decoyArray. As yellow letters appeared, I also replaced them in the decoyArray.
-
-
-
-A helpful side-effect of this process was that the decoyArray had all of the yellow and green letters marked by the end of this process. I used the decoyArray to mark the colors of each letter as they printed onto the console. 
+My first step was to go through the user’s correct/green letters first and replace them with symbols. I created a copy of the user’s guess for this purpose and called it the decoyArray. Then I made a nested loop to search through the answer array and compare it to the decoyArray. As yellow letters appeared, I also replaced them in the decoyArray. I used the decoyArray to mark the colors of each letter as they printed onto the console. 
 
 
 
