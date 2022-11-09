@@ -1,6 +1,6 @@
 # Java-Wordle
 
-<a href= <img src="https://img.shields.io/badge/100%25-Java-blueviolet"/></a>
+<img src="https://img.shields.io/badge/100%25-Java-blueviolet"/></a>
         
 https://img.shields.io/badge/100%25-Java-blueviolet
 
