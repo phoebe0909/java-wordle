@@ -1,10 +1,12 @@
-#Java-Wordle
+# Java-Wordle
 
+<a href= <img src="https://img.shields.io/badge/100%25-Java-blueviolet"/></a>
+        
 https://img.shields.io/badge/100%25-Java-blueviolet
 
 
 
-#Welcome to my Java replica of Wordle. 
+# Welcome to my Java replica of Wordle. 
 Wordle is a game that invites the user to guess a five-letter word. It was a viral hit in early 2022, right around when I started learning to code.
 
 
